@@ -3,58 +3,58 @@ body {
   margin: 0;
 }
 
-.header{
+.header {
   background-color: #1b2127;
   color: white;
   display: flex;
   align-items: center;
-  height: 90px;
+  height: 70px;
   justify-content: space-between;
 }
 
-.header a{
+.header a {
   color: white;
   text-decoration: none;
   display: flex;
   height: inherit;
   align-items: center;
   padding: 0px 10px;
-
 }
 
-.menu{
+.menu {
   height: inherit;
   padding-right: 20px;
 }
 
-.header ol{
+.header ol {
   display: flex;
   height: inherit;
 }
 
-.header ol li{
+.header ol li {
   height: inherit;
 }
 
 ol,
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-figure{
+figure {
   margin: 0;
-
 }
 
-.hero{
+.hero {
   height: 300px;
   background-image: url("../Imagenes/Foto.jpeg");
   background-size: 500px 300px;
   background-repeat: no-repeat;
   background-position: right;
   background-color: #1b2127;
+  display: flex;
+  align-items: center;
 }
 
 h1,
@@ -64,70 +64,167 @@ h4,
 h5,
 h6 {
   font-family: "Fjalla One", sans-serif;
-  margin: 0;
 }
 
-h1{
+h1 {
   font-family: "Fjalla One", sans-serif;
   line-height: 1.5;
   font-size: 40px;
   font-weight: normal;
   letter-spacing: -0.2px;
   color: white;
-  
+  margin: 0;
 }
 
-h1 strong{
+h1 strong {
   color: #026fff;
 }
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
 
-.portfolio{
+.portfolio {
   background: #fafafa;
+  padding: 20px;
 }
 
-.project{
-  border: 1.5px solid grey;
+.project {
+  border: 1px solid grey;
   border-radius: 10px;
-  margin: 10px;
   margin-bottom: 15px;
-  padding: 25px;
+  padding: 20px;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.project-course {
+  margin: 10px 0;
+}
+
+.project-date {
+  margin: 10px 0;
+}
+
+.project-description{
+  font-size: 20px;
+}
+
+.project-imageContainer {
+  width: 500px;
+}
+
+.project-image {
+  width: 500px;
+}
+
+.project strong{
+  font-family: "Fjalla One", sans-serif;
+}
+
+.course {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.course-details {
+  width: 500px;
+}
+
+.course-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.course-date {
+  margin: 10px 0;
+}
+
+.course-description{
+  font-size: 20px;
+}
+
+.course-imageContainer {
+  width: 500px;
+}
+
+.course-image {
+  width: 500px;
+}
+
+.course strong{
+  font-family: "Fjalla One", sans-serif;
+} 
+
+.experience-list{
   display: flex;
 }
 
-.project-details{
-  width: 500px;
-
+.experience img{
+  width: 480px;
+  height: 270px;
+  object-fit: cover;
 }
 
-.project-imageContainer{
-  width: 500px;
-}
-
-.project-image{
-  width: 500px;
-}
-
-.course{
-  border: 1.5px solid grey;
-  border-radius: 10px;
+.experience{
   margin: 10px;
-  margin-bottom: 15px;
-  padding: 25px;
-  background: white;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+
+.experience-details{
+  margin: 20px 40px;
+  background-color: white;
+  margin-top: -50px;
+  position: relative;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+.experience-description{
+  text-align: left;
+}
+
+.experience-list-title{
+  margin-left: 20px;
+}  
+
+
+.footer {
+  color: white;
+  background-color: #1b2127;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.course-details{
-  width: 500px;
+.footer img {
+  vertical-align: middle;
 }
-
-.course-imageContainer{
-  width: 500px;
-}
-
-.course-image{
-  width: 500px;
-}
-
-
