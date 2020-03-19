@@ -11,6 +11,7 @@ body {
   height: 70px;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .header a {
@@ -81,6 +82,10 @@ h1 {
 
 .hero h1 {
   font-size: 30px;
+}
+
+h2{
+  font-size: 25px;
 }
 
 h1 strong {
@@ -307,12 +312,35 @@ h2 {
   flex-wrap: inherit;
 }
 @media screen and (max-width: 1024px) {
-  body {
-    /* border: 10px solid blue; */
+  .container{
+    padding: 0 1em;
   }
+  
 }
 
 @media screen and (max-width: 767px) {
+
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero h1{
+    font-size: 2.5em;
+    z-index: 2;
+    
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    
+  }
   .header {
     display: block;
     height: auto;
@@ -393,9 +421,19 @@ h2 {
   .experience-list-title {
     text-align: center;
   }
+  
 }
 
 @media screen and (max-width: 480px) {
+  h2{
+    font-size: 1.2em;
+  }
+  .hero h1{
+    font-size: 1.5em;
+  }
+  .hero{
+    padding: 1em;
+  }
   .project-details {
     width: auto;
     font-size: 12px;
@@ -406,7 +444,7 @@ h2 {
   }
   .experience-details {
     margin: -2em 0.5em 0.5em;
-    padding: 1em;
+    padding: 0.5em;
   }
   .experience-list-title {
     font-size: 1.2em;
@@ -421,15 +459,41 @@ h2 {
   .functions {
     font-size: 0.7em;
   }
+  .contact{
+    height: auto;
+    padding: 1em;
+    text-align: center;
+    display: block;
+  }
+  .form-email button{
+    margin: 1em auto;
+  }
+  .form-email h3{
+    margin-top: 0;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
 }
 @media screen and (max-width: 320px) {
+  h2{
+    font-size: 0.8em;
+  }
+  .hero h1{
+    font-size: 1em;
+  }
+  .hero{
+    padding: .7em;
+  }
   .project-details {
     width: auto;
     font-size: 10px;
   }
   .course-details {
     width: auto;
-    font-size: 10 px;
+    font-size: 10px;
   }
   .experience-list-title {
     font-size: 1em;
@@ -443,5 +507,10 @@ h2 {
   }
   .functions {
     font-size: 0.7em;
+  }
+  .social-link{
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
   }
 }
