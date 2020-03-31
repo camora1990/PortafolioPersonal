@@ -15,12 +15,13 @@
 
 <body>
 
+  <i class="icon-menu burguer-button" id="burger-menu"></i>
   <header class="header">
     <div class="container">
       <figure class="logo">
-        <img src="Imagenes/logo.png" height="70" alt="Logo de https://camilomorales.com" />
+        <img src="Imagenes/logo.png" alt="Logo de https://camilomorales.com" />
       </figure>
-      <nav class="menu">
+      <nav class="menu is-active">
         <ol>
           <li>
             <a class="link" href="#portafolio">Portafolio</a>
@@ -40,10 +41,11 @@
   <section class="hero">
     <div class="container">
       <h1>
-        ¡Hola! Soy <strong>Camilo Morales Sánchez, </strong> <br> <strong>Ingeniero Industrial</strong> Y estudiante <br />de
+        ¡Hola! Soy <strong>Camilo Morales Sánchez, </strong> <br> <strong>Ingeniero Industrial</strong> Y estudiante
+        <br />de
         <strong>Ingeniería
           en sistemas</strong>, Soy un<br />
-         apasionado por el <strong>desarrollo web.</strong>
+        apasionado por el <strong>desarrollo web.</strong>
       </h1>
       <img class="hero-image" src="Imagenes/Foto.jpeg" alt="Imagen Perfil" width="500">
     </div>
@@ -56,12 +58,18 @@
       <article class="project">
         <div class="project-details">
           <h3 class="project-title">Participante Expertic 2019 </h3>
+
           <h6 class="project-course">Dart / Flutter</h6>
           <p class="project-date"><small> <strong>Fecha:</strong> 02/12/2019</small></p>
           <p class="project-description">Descripcion</p>
         </div>
         <figure class="project-imageContainer">
           <img class="project-image" src="Imagenes/Expertic.jpg" alt="Diploma Expertic">
+          <div class="video">
+            <iframe class="video-expertic" width="560" height="315" src="https://www.youtube.com/embed/7VX25e6JSaE"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </figure>
       </article>
 
@@ -237,6 +245,16 @@
     </div>
 
   </footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    console.log(menu)
+    const burgerButton = document.querySelector('#burger-menu');
+    burgerButton.addEventListener('click', showHiden)
+    console.log(burgerButton)
+    function showHiden() {
+      menu.classList.add('is-active');
+    }
+  </script>
 </body>
 
 </html>
