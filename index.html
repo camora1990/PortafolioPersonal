@@ -21,7 +21,7 @@
       <figure class="logo">
         <img src="Imagenes/logo.png" alt="Logo de https://camilomorales.com" />
       </figure>
-      <nav class="menu is-active">
+      <nav class="menu">
         <ol>
           <li>
             <a class="link" href="#portafolio">Portafolio</a>
@@ -243,16 +243,39 @@
         </p>
       </div>
     </div>
-
   </footer>
   <script>
+    // selcciona la clase menu
     const menu = document.querySelector('.menu');
-    console.log(menu)
+    //selecciona la clase burger menu icono meni
     const burgerButton = document.querySelector('#burger-menu');
-    burgerButton.addEventListener('click', showHiden)
-    console.log(burgerButton)
+    //valida si el media query se encuentra en 767 o menos
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
+
+    //captura el evento del media query 
+    ipad.addListener(validation)
+
+    //valida si el evento se cumple
+    function validation(event) {
+      if (event.matches) {
+        //captura el evento del icono y llama la funcion
+        burgerButton.addEventListener('click', showHiden);
+      }else{
+        burgerButton.removeEventListener('click',showHiden)
+      }
+    }
+    validation(ipad);
+
+    //funcion llamada cuando se captura el evento click
     function showHiden() {
-      menu.classList.add('is-active');
+      //validacion si la clase tiene adicionado is-active
+      if (menu.classList.contains('is-active')) {
+        //si esta adicionado lo remueve
+        menu.classList.remove('is-active');
+      } else {
+
+        menu.classList.add('is-active');
+      }
     }
   </script>
 </body>
